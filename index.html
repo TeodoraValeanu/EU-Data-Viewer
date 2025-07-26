@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualizare Set de Date UE</title>
+    <link rel="stylesheet" href="3_1101_VALEANU_TEODORA_IULIA.css">
+</head>
+<body>
+    
+    <h1>Vizualizare Date PIB, Speranță de Viață, Populație (UE)</h1>
+    <button id="fetch-data">Preia Date</button>
+
+    <div id="selection-container">
+        <label for="country-select">Alege Țara:</label>
+        <select id="country-select"></select>
+
+        <label for="indicator-select">Alege Indicatorul:</label>
+        <select id="indicator-select">
+            <option value="PIB">PIB</option>
+            <option value="SV">Speranță de Viață</option>
+            <option value="POP">Populație</option>
+        </select>
+        
+
+        <button id="show-graph">Afișează Grafic</button>
+    </div>
+
+    <div id="data-container"></div>
+    <div id="graph-container">
+        <svg id="graph" width="800" height="400"></svg>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <div>
+        <label for="year-select-bubble">Selectează anul:</label>
+        <select id="year-select-bubble">
+        </select>
+        <button id="show-bubble-chart">Afișează Bubble Chart</button>
+    </div>
+    
+    <button id="animate-bubble-chart">Animație Bubble Chart</button>
+    <button id="stop-animation">Stop Animație</button>
+
+    <canvas id="bubble-chart" width="1200" height="800" style="border: 1px solid #ccc;"></canvas>
+
+    <script src="3_1101_VALEANU_TEODORA_IULIA.js"></script>
+    
+</body>
+</html>

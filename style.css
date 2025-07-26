@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2rem;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003f7f;
+}
+
+#data-container {
+    margin-top: 20px;
+    overflow-x: auto; /*ca sa gestionam tabelele mari*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#selection-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#graph-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000; /*ne asigurama ca tooltip-ul este deasupra clorlalte elemente */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+}
